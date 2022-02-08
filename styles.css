@@ -66,6 +66,18 @@ body {
 .products-container-mobile {
     display: none;
 }
+.product-name {
+    overflow: hidden;
+    height: 52px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.product-name:hover {
+    overflow: auto;
+    height: auto;
+    text-overflow: initial;
+    white-space: normal;
+}
 .view-cart-button {
     margin-right: 1rem;
 }
