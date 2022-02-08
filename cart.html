@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Order Bun King</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="basic-style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="row bg-black">
+  <div class="col-md-8 container">
+    <div class="row pt-1 pb-1">
+        <div class="col-8 col-md-9">
+            <a href="index.html"><img class="logo" src="images/logo.png"/></a>
+        </div>
+        <div class="col-4 col-md-3 text-right">
+            <div class="cart-container">
+              <div class="inline-block" >
+                <img src="images/cart.png"/>
+                <div class="cart-red-bg">2</div>
+              </div>
+              <div class="inline-block text-white fs-1p2">View Cart</div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="row white-bg-row">&nbsp;</div>
+<div class="row pt-3 pb-3">
+  <div class="col-md-12 fs-2 f-900 text-center">
+    <div>CART
+      <div class="header-underline"></div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-md-8 container p-0">
+    <div class="row pb-2">
+      <div class="col-md-12 p-0">
+        <table class="table table-borderless text-center">
+          <thead>
+            <tr class="bg-black text-white fs-1 regular pt-1 pb-1">
+              <td scope="col" colspan="1" class="pt-1 pb-1"></td>
+              <td scope="col" colspan="2" class="text-left">Products</td>
+              <td scope="col" class='quantity-column'>Quantity</td>
+              <td scope="col">Unit Price</td>
+              <td scope="col">Total</td>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr valign="middle" class="border-bottom-1-black">
+              <td>
+                <button class="btn fs-oh f-900 bg-transparent mr-2">X</button>
+              </td>
+              <td scope="col" colspan="2" class="text-left pt-2 pb-2">
+                <div class='cart-product-container'>
+                   <div class="">
+                     <img class="w-40 cart-product mr-2" src="images/naan-khatai.png"/>
+                   </div>
+                  <div class="text-left">
+                    <div class="fs-oh f-900 cart-product-name">Naan Khatai</div>
+                    <div class="fs-1p2 cart-product-quantity">Plain: $3.50 (12 pcs)</div>
+                  </div>
+                </div>
+              </td>
+              <td class="fs-1p2">
+                <div class="">
+                  <input class="form-control quantity" min="0" name="quantity" value="1" type="number">
+                </div>
+              </td>
+              <td class="fs-1p2">$3.00</td>
+              <td class="fs-1p2">$3.00</td>
+            </tr>
+            <tr valign="middle" class="border-bottom-2-black">
+              <td>
+                <button class="btn fs-oh f-900 bg-transparent mr-2">X</button>
+              </td>
+              <td scope="col" colspan="2" class="text-left pt-2 pb-2">
+                <div class='cart-product-container'>
+                    <div class="">
+                      <img class="w-40 cart-product mr-2" src="images/pound-cake.png"/>
+                    </div>
+                  <div class="text-left">
+                    <div class="fs-oh f-900 cart-product-name">Pound Cake</div>
+                    <div class="fs-1p2 cart-product-quantity">$3.00</div>
+                  </div>
+                </div>
+              </td>
+              <td class="fs-1p2">
+                <div class="">
+                  <input class="form-control quantity" min="0" name="quantity" value="1" type="number">
+                </div>
+              </td>
+              <td class="fs-1p2">$3.00</td>
+              <td class="fs-1p2">$3.00</td>
+            </tr>
+            <tr class="border-bottom-1-black">
+              <td colspan="4"></td>
+              <td class="fs-oh f-900 pt-half pb-half">Total</td>
+              <td class="fs-1p2">$10.00</td>
+            </tr>
+            <tr class="border-bottom-2-black">
+              <td colspan="4"></td>
+              <td class="fs-oh f-900 pt-half pb-half">Delivery Charge</td>
+              <td class="fs-1p2">$4.00</td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td class="fs-oh f-900 grand-total pt-half pb-half">Grand Total</td>
+              <td class="fs-2 f-900 pr-half">$14.00</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row pb-4">
+      <div class="col-md-12">
+        <div class="inline-flex floatRight promo-container">
+          <div class="fs-1p3 f-900 mr-1 mt-half">Apply Promo Code</div>
+          <input class="apply-promo-input border-radius-0"/>
+          <button class="btn bg-black text-white fs-1p3 f-900 border-radius-0">Apply</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="fs-oh f-900">Select Payment Method</div>
+      </div>
+      <div class="col-md-4 inline-flex">
+        <input class="mr-1 mt-half" type="radio"/>
+        <div class="fs-1p3 text-black">Cash on Delivery</div>
+      </div>
+      <div class="col-md-4 inline-flex">
+        <input class="mr-1 mt-half" type="radio"/>
+        <div class="fs-1p3">
+          <div class="fs-1p1 mb-1">EMT (E-mail Money Transfer)</div>
+          <div class="text-gray">EMTs must be made to orderbunking@gmail.com. Please make sure to include your order number as reference.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row bg-yellow mb-2 mt-3">
+  <div class="col-md-8 container">
+    <div class="row pt-4 pb-4">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="fs-1p3 mt-1 mr-2 inline-block">Full Name</div>
+          </div>
+          <div class="col-md-8">
+            <input class="p-1 w-90 info-input" placeholder="Please enter your name"/>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4">
+            <div class="fs-1p3 mt-1 mr-2 inline-block">E-mail ID</div>
+          </div>
+          <div class="col-md-8">
+            <input class="p-1 w-90 info-input" placeholder="Please enter a valid E-mail ID"/>
+            <div class="italic mt-1">Please enter a valid email, an email order confirmation will be sent</div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4">
+            <div class="fs-1p3 mt-1 mr-2 inline-block">Phone</div>
+          </div>
+          <div class="col-md-8">
+            <input class="p-1 w-90 info-input" placeholder="Please enter your phone No."/>
+            <div class="italic mt-1">Don’t worry, we won’t call you to tell you about our newest dunking favourites! </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4 inline-flex">
+            <div class="fs-1p3 pr-2">Pick Delivery Date:</div>
+          </div>
+            <div class="col-md-8">
+              <input type="checkbox" class="p-1 checkbox-20" placeholder="Please enter your phone No."/>
+              <div class="text-red f-900">(Choose every alternate week for toronto west and toronto east)</div>
+              <div class="text-red f-900">Feb 28 delivery for Toronto West</div>
+              <div class="mt-1 text-red f-900">March 7 for Toronto East</div>
+            </div>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="fs-1p3 mt-1 mr-2 inline-block">Delivery Address</div>
+          </div>
+          <div class="col-md-8">
+            <textarea class="p-1 w-90 info-input" placeholder="Please enter delivery address"></textarea>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4">
+            <div class="fs-1p3 mt-1 mr-2 inline-block">Comment</div>
+          </div>
+          <div class="col-md-8">
+            <textarea class="p-1 w-90 info-input" placeholder="Anything you want us to know about your order"></textarea>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12 inline-flex">
+            <input class="mr-1 checkbox-20" type="checkbox"/>
+            <div class="italic">By clicking the button below, you agree that the information provided above are true.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row pt-3">
+  <div class="col-md-12 text-center">
+    <button class="btn bg-black text-white border-radius-0 pt-1 pb-1 pl-3 pr-3 fs-1p3">Proceed to Confirm Order</button>
+    <div class="italic pt-4">All items are prepared and packaged in our health approved Bakery. Delivering directly from Etobicoke to: Pickering, Whitby and Oshawa </div>
+  </div>
+</div>
+
+<div class="row bg-black text-white mt-3">
+  <div class="col-12 col-md-8 container pt-1 pb-1">
+    <div class="row">
+      <div class="col-7 col-md-6 fs-1p1">©2021, Order Bun King</div>
+      <div class="col-5 col-md-6 fs-1p1 text-right">Privacy Policy</div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  $('.btn-plus, .btn-minus').on('click', function(e) {
+    const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
+    const input = $(e.target).closest('.input-group').find('input');
+    if (input.is('input')) {
+      input[0][isNegative ? 'stepDown' : 'stepUp']()
+    }
+  })
+</script>
+</html>

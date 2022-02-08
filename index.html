@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Order Bun King</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="basic-style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="row bg-black">
+    <div class="col-md-8 container">
+      <div class="row pt-1 pb-1">
+        <div class="col-8 col-md-9">
+          <a href="index.html"><img class="logo" src="images/logo.png" /></a>
+        </div>
+        <div class="col-4 col-md-3 text-right">
+          <div class="cart-container">
+            <div class="inline-block cart-icon">
+              <img src="images/cart.png" />
+              <div class="cart-red-bg">2</div>
+            </div>
+            <div class="inline-block text-white fs-1p2">
+              <a class="text-white" href="cart.html">View Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 bg-red text-white text-center pt-2 pb-2 mt-half fs-2 bold">Enter "5OFF" to have $5 off of your
+      order</div>
+  </div>
+  <div class="row p-th">
+    <div class="col-md-12 text-center fs-2">Thank you for choosing Order Bun King. We appreciate your support.</div>
+    <div class="col-md-12 text-center fs-2">Happy Dunking!</div>
+  </div>
+  <div class="row pb-1">
+    <div class="col-12 bg-yellow col-md-8 container pt-2 pb-1">
+      <div class="row ">
+        <div class="col-12 col-md-12 pr-0 text-center f-900 fs-th pb-2">
+          <div>HOW TO ORDER
+            <div class="header-underline"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class='col-md-8'>
+          <div class='row pb-2'>
+            <div class="col-md-6 inline-flex pb-1">
+              <div>
+                <img class="mr-1" src="images/clock.png" />
+              </div>
+              <div class="fs-1p1">All orders must be submitted by Thursday 9PM for delivery on Sunday</div>
+            </div>
+            <div class="col-md-6 inline-flex">
+              <div>
+                <img class="mr-1" src="images/payment.png" />
+              </div>
+              <div class="fs-1p1">All orders must be paid via cash or EMT only</div>
+            </div>
+          </div>
+          <div class="row pb-2">
+            <div class="col-md-6 inline-flex pb-1">
+              <div class="pb-2">
+                <img src="images/truck.png" />
+              </div>
+              <div class="ml-1 fs-1p1">
+                <span class="bg-black text-white bold p-half">
+                  Free delivery for orders over $20.
+                </span>
+                <div class="pt-1">For all orders under $20, there will be a delivery charge of $4.</div>
+              </div>
+            </div>
+            <div class="col-md-6 fs-1p1 inline-flex">
+              <div>
+                <img class="" src="images/phone.png" />
+              </div>
+              <div class="ml-1">
+                We require a valid phone number and email address for order verification purposes.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class="row pb-1">
+            <div class="col-md-12 inline-flex">
+              <div>
+                <img class="" src="images/map.png" />
+              </div>
+              <div class="ml-1 fs-1p1">
+                Currently delivering orders only to Brampton, Etobicoke, Milton,
+                Mississauga & Vaughan in the West and East York, Don Mills & Thorncliffe
+                in the East. Orders outside of this area may be subject to a $10 delivery charge.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-8 container p-0">
+      <div class="row pt-2 pb-2">
+        <div class="col-md-12 text-center p-oh fs-th f-900">
+          <div>OUR PRODUCTS
+            <div class="header-underline"></div>
+          </div>
+        </div>
+      </div>
+      <div class="products-container">
+        <div class="row justify-between">
+          <div class='p-0 col-4 col-md-2'>
+            <div>
+              <img class="w-100" src="images/naan-khatai.png" />
+
+            </div>
+            <div class="text-center fs-oh pt-1">Naan Khatai</div>
+            <div class="text-center bold">$3.50
+              <span class="fs-1 text-gray regular">/12 pcs</span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-1" onclick="addToCartFunction(1)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(1)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-1"></div>
+                <button class="add-item" onclick="addToCartFunction(1)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='p-0 col-4 col-md-2'>
+            <div>
+              <img class="w-100" src="images/coconut-buns.png" />
+            </div>
+            <div class="text-center fs-oh pt-1">Coconut Buns</div>
+            <div class="text-center bold">$4.00
+              <span class="fs-1 text-gray regular">/6 pcs</span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-2" onclick="addToCartFunction(2)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(2)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-2"></div>
+                <button class="add-item" onclick="addToCartFunction(2)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='p-0 col-4 col-md-2'>
+            <div>
+              <img class="w-100" src="images/viryani-toast.png" />
+            </div>
+            <div class="text-center fs-oh pt-1">Viryari Toast</div>
+            <div class="text-center bold">$4.00
+              <span class="fs-1 text-gray regular"></span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-3" onclick="addToCartFunction(3)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(3)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-3"></div>
+                <button class="add-item" onclick="addToCartFunction(3)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='p-0 col-4 col-md-2'>
+            <div>
+              <img class="w-100" src="images/khara-biscuit.png" />
+            </div>
+            <div class="text-center fs-oh pt-1">Khara Biscuit</div>
+            <div class="text-center bold">$4.50
+              <span class="fs-1 text-gray regular">/12 pcs</span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-4" onclick="addToCartFunction(4)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(4)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-4"></div>
+                <button class="add-item" onclick="addToCartFunction(4)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class=' p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/halal-beef-rolls.png" />
+            </div>
+            <div class="text-center fs-oh pt-1">Halal Beef Rolls</div>
+            <div class="text-center bold">$13.50
+              <span class="fs-1 text-gray regular">/12 pcs Large</span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-5" onclick="addToCartFunction(5)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(5)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-5"></div>
+                <button class="add-item" onclick="addToCartFunction(5)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-between pt-4">
+          <div class='  p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/halal-beef-rolls-small.png" />
+            </div>
+            <div class="text-center fs-oh pt-1">Halal Beef Rolls</div>
+            <div class="text-center bold">$8.50
+              <span class="fs-1 text-gray regular">/12 pcs Small</span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-6" onclick="addToCartFunction(6)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(6)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-6"></div>
+                <button class="add-item" onclick="addToCartFunction(6)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='  p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/halal-beef-rolls.png" />
+            </div>
+            <div class="text-center fs-oh pt-1">Halal Chicken Rolls</div>
+            <div class="text-center bold">$13.50
+              <span class="fs-1 text-gray regular">/12 pcs Large</span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-7" onclick="addToCartFunction(7)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(7)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-7"></div>
+                <button class="add-item" onclick="addToCartFunction(7)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='  p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/halal-beef-rolls-small.png" />
+            </div>
+            <div class="text-center fs-oh pt-1">Halal Chicken Rolls</div>
+            <div class="text-center bold">$8.50
+              <span class="fs-1 text-gray regular">/12 pcs Small</span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-8" onclick="addToCartFunction(8)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(8)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-8"></div>
+                <button class="add-item" onclick="addToCartFunction(8)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='  p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/jugu-cake.png" />
+            </div>
+            <div class="text-center fs-oh pt-1">Jugu Cake</div>
+            <div class="text-center bold">$4.50
+              <span class="fs-1 text-gray regular">/8 pcs</span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-9" onclick="addToCartFunction(9)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(9)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-9"></div>
+                <button class="add-item" onclick="addToCartFunction(9)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class=' p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/pound-cake.png" />
+            </div>
+            <div class="text-center fs-oh pt-1">Pound Cake</div>
+            <div class="text-center bold">$3.00
+              <span class="fs-1 text-gray regular"></span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-10" onclick="addToCartFunction(10)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(10)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-10"></div>
+                <button class="add-item" onclick="addToCartFunction(10)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-between pt-4">
+          <div class='  p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/maani.png" />
+            </div>
+            <div class="text-center fs-oh pt-1 product-name">Maani/ Chapti/ Roti</div>
+            <div class="text-center bold">$7.50
+              <span class="fs-1 text-gray regular">/10 pcs</span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-11" onclick="addToCartFunction(11)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(11)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-11"></div>
+                <button class="add-item" onclick="addToCartFunction(11)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='  p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/pizza-shells.png" />
+            </div>
+            <div class="text-center fs-oh pt-1 product-name">Pizza Shells</div>
+            <div class="text-center bold">$6.50
+              <span class="fs-1 text-gray regular">/12 pcs</span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-12" onclick="addToCartFunction(12)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(12)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-12"></div>
+                <button class="add-item" onclick="addToCartFunction(12)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='  p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/multigrain-loaf.png" />
+            </div>
+            <div class="text-center fs-oh pt-1 product-name">Multi Grain Bread Loaf</div>
+            <div class="text-center bold">$3.50
+              <span class="fs-1 text-gray regular"></span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-13" onclick="addToCartFunction(13)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(13)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-13"></div>
+                <button class="add-item" onclick="addToCartFunction(13)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='  p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/whole-wheat-bread-loaf.png" />
+            </div>
+            <div class="text-center fs-oh pt-1 product-name">Whole Wheat Bread Loaf</div>
+            <div class="text-center bold">$3.50
+              <span class="fs-1 text-gray regular"></span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-14" onclick="addToCartFunction(14)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(14)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-14"></div>
+                <button class="add-item" onclick="addToCartFunction(14)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class=' p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/white-bread-loaf.png" />
+            </div>
+            <div class="text-center fs-oh pt-1 product-name">White Bread Loaf</div>
+            <div class="text-center bold">$3.00
+              <span class="fs-1 text-gray regular"></span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-15" onclick="addToCartFunction(15)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(15)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-15"></div>
+                <button class="add-item" onclick="addToCartFunction(15)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-between pt-4">
+          <div class='p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/garlic-bread-baguette.png" />
+            </div>
+            <div class="text-center fs-oh pt-1 product-name">Garlic Bread Baguette</div>
+            <div class="text-center bold">$3.50
+              <span class="fs-1 text-gray regular"></span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-16" onclick="addToCartFunction(16)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(16)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-16"></div>
+                <button class="add-item" onclick="addToCartFunction(16)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='p-0 col-md-2'>
+            <div>
+              <img class="w-100" src="images/pau-bhaji.png" />
+
+             </div>
+            <div class="text-center fs-oh pt-1 product-name">Pau Bhaji</div>
+            <div class="text-center bold">$3.00
+              <span class="fs-1 text-gray regular">/12 pcs</span>
+            </div>
+            <div class="add-to-cart-yellow-bg">
+              <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-17" onclick="addToCartFunction(17)">Add to Cart</div>
+              <div class="add-remove-button-container">
+                <button class="remove-item" onclick="removeFromCartFunction(17)">
+                  <i type="button" class="fa fa-minus"></i>
+                </button>
+                <div class="fs-2 item-quantity" id="product-id-17"></div>
+                <button class="add-item" onclick="addToCartFunction(17)">
+                  <i type="button" class="fa fa-plus fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='  p-0 col-md-2 opacity-0'>
+          </div>
+          <div class='  p-0 col-md-2 opacity-0'>
+          </div>
+          <div class='ml-half p-0 col-md-2 opacity-0'>
+          </div>
+        </div>
+      </div>
+      <div class="products-container-mobile">
+        <div class="row">
+          <div class="col-md-12 justify-between pl-2 pr-oh">
+            <div class='pr-2'>
+              <img class="w-100" src="images/naan-khatai.png" />
+              <div class="text-center fs-oh pt-1">Naan Khatai</div>
+              <div class="text-center bold">$3.50
+                <span class="fs-1 text-gray regular">/12 pcs</span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-1" onclick="addToCartFunctionMobile(1)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(1)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-1"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(1)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class='pr-2'>
+              <img class="w-100" src="images/coconut-buns.png" />
+              <div class="text-center fs-oh pt-1">Coconut Buns</div>
+              <div class="text-center bold">$4.00
+                <span class="fs-1 text-gray regular">/6 pcs</span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-2" onclick="addToCartFunctionMobile(2)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(2)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-2"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(2)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class=''>
+              <img class="w-100" src="images/viryani-toast.png" />
+              <div class="text-center fs-oh pt-1">Viryari Toast</div>
+              <div class="text-center bold">$4.00
+                <span class="fs-1 text-gray regular"></span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-3" onclick="addToCartFunctionMobile(3)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(3)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-3"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(3)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-md-12 justify-between pl-2 pr-oh">
+            <div class='pr-2'>
+              <img class="w-100" src="images/khara-biscuit.png" />
+              <div class="text-center fs-oh pt-1">Khara Biscuit</div>
+              <div class="text-center bold">$4.50
+                <span class="fs-1 text-gray regular">/12 pcs</span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-4" onclick="addToCartFunctionMobile(4)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(4)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-4"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(4)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class='pr-2'>
+              <img class="w-100" src="images/halal-beef-rolls.png" />
+              <div class="text-center fs-oh pt-1">Halal Beef Rolls</div>
+              <div class="text-center bold">$13.50
+                <span class="fs-1 text-gray regular">/12 pcs Large</span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-5" onclick="addToCartFunctionMobile(5)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(5)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-5"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(5)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class=''>
+              <img class="w-100" src="images/halal-beef-rolls-small.png" />
+              <div class="text-center fs-oh pt-1">Halal Beef Rolls</div>
+              <div class="text-center bold">$8.50
+                <span class="fs-1 text-gray regular">/12 pcs Small</span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-6" onclick="addToCartFunctionMobile(6)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(6)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-6"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(6)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-md-12 justify-between pl-2 pr-oh">
+            <div class='pr-2'>
+              <img class="w-100" src="images/halal-beef-rolls.png" />
+              <div class="text-center fs-oh pt-1">Halal Chicken Rolls</div>
+              <div class="text-center bold">$13.50
+                <span class="fs-1 text-gray regular">/12 pcs Large</span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-7" onclick="addToCartFunctionMobile(7)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(7)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-7"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(7)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class='pr-2'>
+              <img class="w-100" src="images/halal-beef-rolls-small.png" />
+              <div class="text-center fs-oh pt-1">Halal Chicken Rolls</div>
+              <div class="text-center bold">$8.50
+                <span class="fs-1 text-gray regular">/12 pcs Small</span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-8" onclick="addToCartFunctionMobile(8)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(8)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-8"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(8)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class=''>
+              <img class="w-100" src="images/jugu-cake.png" />
+              <div class="text-center fs-oh pt-1">Jugu Cake</div>
+              <div class="text-center bold">$4.50
+                <span class="fs-1 text-gray regular">/8 pcs</span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-9" onclick="addToCartFunctionMobile(9)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(9)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-9"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(9)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-md-12 justify-between pl-2 pr-oh">
+            <div class='pr-2'>
+              <img class="w-100" src="images/pound-cake.png" />
+              <div class="text-center fs-oh pt-1">Pound Cake</div>
+              <div class="text-center bold">$3.00
+                <span class="fs-1 text-gray regular"></span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-10" onclick="addToCartFunctionMobile(10)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(10)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-10"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(10)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class='pr-2'>
+              <img class="w-100" src="images/maani.png" />
+              <div class="text-center fs-oh pt-1">Maani/ Chaptti/ Roti</div>
+              <div class="text-center bold">$7.50
+                <span class="fs-1 text-gray regular">/10 pcs</span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-11" onclick="addToCartFunctionMobile(11)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(11)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-11"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(11)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class=''>
+              <img class="w-100" src="images/pizza-shells.png" />
+              <div class="text-center fs-oh pt-1">Pizza Shells</div>
+              <div class="text-center bold">$6.50
+                <span class="fs-1 text-gray regular">/12 pcs</span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-12" onclick="addToCartFunctionMobile(12)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(12)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-12"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(12)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-md-12 justify-between pl-2 pr-oh">
+            <div class='pr-2'>
+              <img class="w-100" src="images/multigrain-loaf.png" />
+              <div class="text-center fs-oh pt-1">Multi Grain Bread Loaf</div>
+              <div class="text-center bold">$3.50
+                <span class="fs-1 text-gray regular"></span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-13" onclick="addToCartFunctionMobile(13)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(13)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-13"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(13)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class='pr-2'>
+              <img class="w-100" src="images/whole-wheat-bread-loaf.png" />
+              <div class="text-center fs-oh pt-1">Whole Wheat Bread Loaf</div>
+              <div class="text-center bold">$3.50
+                <span class="fs-1 text-gray regular"></span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-14" onclick="addToCartFunctionMobile(14)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(14)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-14"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(14)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class=''>
+              <img class="w-100" src="images/white-bread-loaf.png" />
+              <div class="text-center fs-oh pt-1">White Bread Loaf</div>
+              <div class="text-center bold">$3.00
+                <span class="fs-1 text-gray regular"></span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-15" onclick="addToCartFunctionMobile(15)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(15)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-15"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(15)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-md-12 justify-between pl-2 pr-oh">
+            <div class='pr-2'>
+              <img class="w-100" src="images/garlic-bread-baguette.png" />
+              <div class="text-center fs-oh pt-1">Garlic Bread Baguette</div>
+              <div class="text-center bold">$3.50
+                <span class="fs-1 text-gray regular"></span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-16" onclick="addToCartFunctionMobile(16)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(16)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-16"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(16)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class='pr-2'>
+              <img class="w-100" src="images/pau-bhaji.png" />
+              <div class="text-center fs-oh pt-1">Pau Bhaji</div>
+              <div class="text-center bold">$3.00
+                <span class="fs-1 text-gray regular">/12 pcs</span>
+              </div>
+              <div class="add-to-cart-yellow-bg">
+                <div type="button" class="add-to-cart-button text-center text-black bold fs-1" id="add-to-cart-button-mobile-17" onclick="addToCartFunctionMobile(17)">Add to Cart</div>
+                <div class="add-remove-button-container">
+                  <button class="remove-item" onclick="removeFromCartFunctionMobile(17)">
+                    <i type="button" class="fa fa-minus"></i>
+                  </button>
+                  <div class="fs-2 item-quantity" id="product-id-mobile-17"></div>
+                  <button class="add-item" onclick="addToCartFunctionMobile(17)">
+                    <i type="button" class="fa fa-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class='opacity-0'>
+              <img class="w-100" src="images/white-bread-loaf.png" />
+              <div class="text-center fs-oh pt-1">White Bread Loaf</div>
+              <div class="text-center bold">$3.00
+                <span class="fs-1 text-gray regular"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-4 pb-3">
+        <div class="col-12 scol-md-12 text-center pr-0">
+          <button type="button" class="fs-oh btn bg-black text-white border-radius-0 view-cart-button">View
+            Cart</button>
+          <button type="button" class="fs-oh btn bg-black text-white border-radius-0">Proceed To Confirm Order</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 container text-center bg-yellow p-oh fs-1 italic">
+          <div>Delivery Fee is $4.00</div>
+          <div>Place your order by Thursday 9PM for delivery on Sunday.</div>
+          <div class="pt-1 pb-1">
+            <span class="bg-black text-white p-half mt-1 mb-1">Delivery Fee waived for orders above $20</span>
+          </div>
+          <div>All items are prepared and packaged in our health approved Bakery.</div>
+          <div>Delivering directly from Etobicoke to: Brampton, Etobicoke, Milton, Mississauga, Vaughn and Oakville.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row bg-black text-white mt-3">
+    <div class="col-12 col-md-8 container pt-1 pb-1">
+      <div class="row">
+        <div class="col-7 col-md-6 fs-1p1">©2021, Order Bun King</div>
+        <div class="col-5 col-md-6 fs-1p1 text-right">Privacy Policy</div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  var noti = document.querySelector(".cart-icon");
+  var quantity = document.querySelector('.item-quantity');
+  var content = document.getElementsByClassName('add-to-cart-button-container')[0];
+
+  var product_array = new Array(20);
+  var add_to_cart_button_array = new Array(20);
+  var product_array_mobile = new Array(20);
+  var add_to_cart_button_array_mobile = new Array(20);
+  product_array.fill(0);
+  add_to_cart_button_array.fill(0);
+  product_array_mobile.fill(0);
+  add_to_cart_button_array_mobile.fill(0);
+
+
+  function addToCartFunction(id) {
+    product_array[id] += 1;
+    add_to_cart_button_array[id] += 1;
+    var productId = '#product-id-' + id;
+    var cartButtonId = '#add-to-cart-button-' + id;
+    var cartButton = document.querySelector(cartButtonId);
+    var quantity = document.querySelector(productId);
+
+    cartButton.nextElementSibling.style.display = "flex";
+    cartButton.style.display = "none";
+    quantity.setAttribute('data-count', product_array[id]);
+
+    var cart_quantity = document.querySelector(".cart-icon");
+    var add_cart_quantity = Number(cart_quantity.getAttribute('data-count') || 0);
+    cart_quantity.setAttribute('data-count', add_cart_quantity + 1);
+    cart_quantity.classList.add('zero');
+  }
+  function removeFromCartFunction(id) {
+    if (product_array[id] < 1) {
+    } else {
+      product_array[id] -= 1;
+      var productId = '#product-id-' + id;
+      console.log(productId);
+      var quantity = document.querySelector(productId);
+      quantity.setAttribute('data-count', product_array[id]);
+
+      var cart_quantity = document.querySelector(".cart-icon");
+      var add_cart_quantity = Number(cart_quantity.getAttribute('data-count') || 0);
+      cart_quantity.setAttribute('data-count', add_cart_quantity - 1);
+    }
+  }
+
+  function addToCartFunctionMobile(id) {
+    product_array_mobile[id] += 1;
+    add_to_cart_button_array_mobile[id] += 1;
+    var productIdMobile = '#product-id-mobile-' + id;
+    var cartButtonIdMobile = '#add-to-cart-button-mobile-' + id;
+    var cartButtonMobile = document.querySelector(cartButtonIdMobile);
+    var quantityMobile = document.querySelector(productIdMobile);
+
+    console.log(cartButtonIdMobile);
+    cartButtonMobile.nextElementSibling.style.display = "flex";
+    cartButtonMobile.style.display = "none";
+    quantityMobile.setAttribute('data-count', product_array_mobile[id]);
+
+    var cart_quantity = document.querySelector(".cart-icon");
+    var add_cart_quantity = Number(cart_quantity.getAttribute('data-count') || 0);
+    cart_quantity.setAttribute('data-count', add_cart_quantity + 1);
+    cart_quantity.classList.add('zero');
+  }
+
+  function removeFromCartFunctionMobile(id) {
+    if (product_array_mobile[id] < 1) {
+    } else {
+      product_array_mobile[id] -= 1;
+      add_to_cart_button_array_mobile[id] -= 1;
+      var productIdMobile = '#product-id-mobile-' + id;
+      var cartButtonIdMobile = '#add-to-cart-button-mobile-' + id;
+      var cartButtonMobile = document.querySelector(cartButtonIdMobile);
+      var quantityMobile = document.querySelector(productIdMobile);
+
+      console.log(cartButtonIdMobile);
+      cartButtonMobile.nextElementSibling.style.display = "flex";
+      cartButtonMobile.style.display = "none";
+      quantityMobile.setAttribute('data-count', product_array_mobile[id]);
+
+      var cart_quantity = document.querySelector(".cart-icon");
+      var add_cart_quantity = Number(cart_quantity.getAttribute('data-count') || 0);
+      cart_quantity.setAttribute('data-count', add_cart_quantity - 1);
+      cart_quantity.classList.add('zero');
+    }
+  }
+</script>
+
+</html>
