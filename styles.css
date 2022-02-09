@@ -78,6 +78,18 @@ body {
     text-overflow: initial;
     white-space: normal;
 }
+.product-price {
+    overflow: hidden;
+    height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.product-price:hover {
+    overflow: auto;
+    height: auto;
+    text-overflow: initial;
+    white-space: normal;
+}
 .view-cart-button {
     margin-right: 1rem;
 }
